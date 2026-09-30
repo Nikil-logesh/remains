@@ -1,4 +1,4 @@
-# Signalpost — Company Intelligence Agent
+# Remain — Company Intelligence Agent
 
 Signalpost performs a **read-only** lookup of Norwegian companies in the
 Brønnøysund Register Centre's Enhetsregisteret. The production path combines official registry identity, bounded first-party
