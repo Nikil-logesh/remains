@@ -1,0 +1,48 @@
+Hi,
+
+Signalpost+Round+1+submission.
+
+Agent+name:
+Signalpost
+
+Repository+URL:
+<PASTE_PUBLIC_REPOSITORY_URL_HERE>
+
+Exact+commit+hash:
+fabaeeb61416e0566bd8d5977d86318620e4aa33
+
+100-company+smoke-test+result+or+report+URL:
+<PASTE_100_COMPANY_REPORT_URL_HERE>
+
+Current local verification:
+22 tests passed.
+One-company live enriched smoke test passed for organisation number 984851006.
+The required 100-company smoke run must be executed with the official evaluator batch before submission.
+
+One-command+run+instruction:
+python run.py --input evaluator-companies.jsonl --output output/profiles.jsonl --run-id submission-001 --enrich
+
+Windows setup:
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+Models+/+APIs+/+licences:
+- Python 3.12+
+- Pydantic v2, httpx, BeautifulSoup4, lxml, pytest, python-dotenv
+- Brønnøysundregistrene Enhetsregisteret official API for canonical company identity
+- Registry-provided first-party public websites for bounded confirmation
+- Optional NVIDIA NIM API: google/gemma-4-31b-it
+- NVIDIA API key is supplied through NVIDIA_API_KEY only and is not committed
+- No search result, social profile, or unofficial scraper is used as sole evidence
+- Dependencies use their respective open-source licences; source access follows each provider's terms
+
+Expected+cost+per+official+run:
+Deterministic registry and public-source path: expected third-party model cost $0.
+Optional NVIDIA Gemma extraction cost: dependent on NVIDIA NIM pricing and enabled usage.
+The implementation uses bounded requests, retries, response-size limits, and fail-closed abstention.
+
+Contact+for+results:
+<PASTE_CONTACT_EMAIL_HERE>
+
+Builderr+source:+source=direct
