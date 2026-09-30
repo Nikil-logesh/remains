@@ -9,15 +9,16 @@ Repository+URL:
 https://github.com/Nikil-logesh/remains
 
 Exact+commit+hash:
-41b541e37300ffb352fc423d1bc2fe1f517a02ff
+1e77d29b5627d4bb6fc4b35b9051b12213490834
 
 100-company+smoke-test+result+or+report+URL:
-<PASTE_100_COMPANY_REPORT_URL_HERE>
+https://github.com/Nikil-logesh/remains/blob/1e77d29b5627d4bb6fc4b35b9051b12213490834/reports/100-company-smoke-test.txt
 
 Current local verification:
 22 tests passed.
+100 public-company smoke test produced 100 output envelopes for 100 input rows.
 One-company live enriched smoke test passed for organisation number 984851006.
-The required 100-company smoke run must be executed with the official evaluator batch before submission.
+Builderr will supply the official company batch for the scored run.
 
 One-command+run+instruction:
 python run.py --input evaluator-companies.jsonl --output output/profiles.jsonl --run-id submission-001 --enrich
