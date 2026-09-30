@@ -1,0 +1,18 @@
+﻿Remain public 100-company smoke test
+Run ID: remain-public-100-20260930
+Date: 2026-09-30
+Input source: D:\learn\financial-filer-master-2025.jsonl.txt (first 100 public company records)
+Command: python run.py --input reports\public-company-list-100.jsonl --output reports\public-company-output-100.jsonl --financial-dataset D:\learn\financial-filer-master-2025.jsonl.txt --run-id remain-public-100-20260930
+
+Results:
+Input non-empty rows: 100
+Output envelopes: 100
+One output per input: PASS
+Terminal completed: 100
+Terminal failed: 0
+Available claims: 940
+Not-available claims: 0
+Other claims: 0
+Third-party model cost: `$0` (deterministic registry/financial snapshot path)
+
+The output preserves input_line and input for every non-empty row. No company rows were dropped.
